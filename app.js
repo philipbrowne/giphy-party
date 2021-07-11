@@ -1,4 +1,3 @@
-console.log("Let's get this party started!");
 const form = document.getElementById('giphyform');
 const searchInput = document.getElementById('searchinput');
 const searchBtn = document.getElementById('searchbtn');
@@ -13,10 +12,8 @@ async function getImg(q) {
   const res = await axios.get('https://api.giphy.com/v1/gifs/search', {
     params: giphyObject,
   });
-  console.log(res.data.data);
-  randNum = Math.floor(Math.random() * res.data.data.length);
+  const randNum = Math.floor(Math.random() * res.data.data.length);
   const imgURL = res.data.data[randNum].images.original.url;
-  console.log(imgURL);
   const newImg = document.createElement('img');
   const imgContainer = document.createElement('div');
   imgContainer.classList.add('giphy');
