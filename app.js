@@ -24,7 +24,10 @@ async function getImg(q) {
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
-  getImg(searchInput.value);
+  if (searchInput.value) {
+    getImg(searchInput.value);
+  }
+  searchInput.value = '';
 });
 
 removeBtn.addEventListener('click', function () {
