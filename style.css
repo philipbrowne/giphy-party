@@ -96,5 +96,8 @@ a {
   img{
     display: block;
   }
+  h1{
+    font-size: 2rem;
+  }
 }
 
