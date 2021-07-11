@@ -6,25 +6,19 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
   background-color: #1d3557;
   color: #f1faee;
 }
 
 #title {
-  text-align: center;
   color: #e63946;
+  font-size: 3rem;
 }
 
 #search {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 #search .input {
@@ -72,7 +66,6 @@ a {
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .giphy {
@@ -86,7 +79,7 @@ a {
   max-width: 300px;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 500px) {
   .btn {
     display: block;
   }
