@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #1d3557;
+  color: #f1faee;
+}
+
+#title {
+  text-align: center;
+  color: #e63946;
+}
+
+#search {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#search .input {
+  background-color: #fff;
+  border: 1px solid white;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  border: 0;
+  font-family: inherit;
+  background-color: #f1faee;
+  color: #1d3557;
+  justify-content: center;
+}
+
+#search button,
+a {
+  background-color: #1d3557;
+  color: #f1faee;
+  border: 0;
+  font-size: 18px;
+  padding: 10px;
+  height: 50px;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+}
+
+#giphyform {
+  display: inline;
+}
+
+#removebtn {
+  display: inline;
+  cursor: pointer;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+#images {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.giphy {
+  max-width: 350px;
+  width: 100%;
+  margin: 0.5rem;
+}
+
+#images img {
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (max-width: 475px) {
+  .btn {
+    display: block;
+  }
+  .input {
+    display: block;
+  }
+}
