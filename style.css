@@ -88,4 +88,8 @@ a {
   .input {
     display: block;
   }
+  #images img{
+    max-width: 200px;
+  }  
 }
+
